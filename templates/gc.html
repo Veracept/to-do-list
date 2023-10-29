@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ article.title }}
+{% endblock %}
+
+
+{% block body %}
+<div class="container mt-5">
+<h>{{ article.title }}</h>
+
+
+    <div class="alert alert-info">
+        <p>{{ article.text }}</p>
+    <a href="/posts/{{ article.id }}/del" style="border:2px solid rgb(154, 154, 154);" class="btn btn-success">Сделано</a>
+{% endblock %}

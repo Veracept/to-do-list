@@ -13,8 +13,9 @@
     <div class="alert alert-info">
         <p>{{ article.text }}</p>
         <p><br>Дата: {{ article.date.date() }}</br></p>
-        <a href="/posts/{{ article.id }}/del" class="btn btn-danger">Удалить</a>
-        <a href="/posts/{{ article.id }}/update" class="btn btn-success">Редактировать</a>
+        <a href="/posts/{{ article.id }}/del" style="border:2px solid rgb(154, 154, 154);" class="btn btn-success">Сделано</a>
+        <a href="/posts/{{ article.id }}/del" style="border:2px solid rgb(154, 154, 154);" class="btn btn-danger">Удалить</a>
+        <a href="/posts/{{ article.id }}/update" style="border:2px solid rgb(154, 154, 154); color: rgb(255, 255, 255);"class="btn btn-warning">Редактировать</a>
 
     </div>
 

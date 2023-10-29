@@ -1,0 +1,15 @@
+.center{
+    text-align: center;
+}
+
+.footer-text{
+    color:rgb(59, 59, 59); 
+    padding: 10px;
+    margin: 0; 
+    text-align:center;    
+}
+
+html {
+    background-color: rgb(81, 82, 82);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}

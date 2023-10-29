@@ -82,6 +82,13 @@ def post_update(id):
         return render_template ("post_update.html", article=article)
 
 
+# @app.route('/gc')
+# def gc():
+#     return render_template ("gc.html")
+
+@app.route('/how-to-organize-your-day')
+def gc():
+    return render_template ("organize.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

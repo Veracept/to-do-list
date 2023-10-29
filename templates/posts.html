@@ -7,7 +7,7 @@
 
 {% block body %}
 <div class="container mt-5">
-<h>Ваши планы снизу: </h>
+<h5 style="text-align: center;">Ваши планы снизу: </h5>
 
     {% if articles|length > 0 %}
 
@@ -16,7 +16,8 @@
     <div class="alert alert-info">
         <h2>{{ el.title }}</h2>
         <p>{{ el.intro }}</p>
-        <p><br>Дата: {{ el.date.date() }}</br></p>
+        <p><br>Дата создания: {{ el.date.date() }}</br></p>
+        <p>Дата обновления: {{ el.date.date() }}</p>
         <a href="/posts/{{ el.id }}" class="btn btn-warning">Подробней</a>
     </div>
     {% endfor %}
